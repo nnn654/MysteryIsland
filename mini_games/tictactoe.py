@@ -16,11 +16,11 @@ def tictactoe_game(screen, inventory, screen_manager, victory_imgs):
     offset_x = 0
     offset_y = 0
 
-    x_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/x_img.png").convert_alpha()
-    o_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/o_img.png").convert_alpha()
-    background_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/screen_tictactoe.png").convert()
-    defeat_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/defeattictactoe.png").convert()
-    victory_bg_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/screen_restictac.png").convert()
+    x_image = pygame.image.load("../game/icons/x_img.png").convert_alpha()
+    o_image = pygame.image.load("../game/icons/o_img.png").convert_alpha()
+    background_image = pygame.image.load("../game/icons/screen_tictactoe.png").convert()
+    defeat_image = pygame.image.load("../game/icons/defeattictactoe.png").convert()
+    victory_bg_image = pygame.image.load("../game/icons/screen_restictac.png").convert()
 
     def update_sizes():
         nonlocal WIDTH, HEIGHT, SQUARE_SIZE, offset_x, offset_y

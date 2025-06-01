@@ -56,21 +56,21 @@ def fade_out(screen, image, duration=1000):
 def show_intro_sequence(screen_manager):
     SCREEN = screen_manager.get_screen()
     intro_images = [
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/intro1.png"),
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/intro2.png"),
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/intro3.png"),
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/intro4.png"),
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/intro5.png"),
+        pygame.image.load("../game/icons/intro1.png"),
+        pygame.image.load("../game/icons/intro2.png"),
+        pygame.image.load("../game/icons/intro3.png"),
+        pygame.image.load("../game/icons/intro4.png"),
+        pygame.image.load("../game/icons/intro5.png"),
     ]
 
-    play_music("C:/Users/bel31/PycharmProjects/pythonProject/game/sounds/intro_theme.ogg")
+    play_music("../game/sounds/intro_theme.ogg")
 
     for i, img in enumerate(intro_images):
         img = pygame.transform.scale(img, SCREEN.get_size())
 
         if i == 2:
             stop_music()
-            play_music("C:/Users/bel31/PycharmProjects/pythonProject/game/sounds/intro3_theme.ogg")
+            play_music("../game/sounds/intro3_theme.ogg")
 
         fade_in(SCREEN, img)
         waiting = True
@@ -84,7 +84,7 @@ def show_intro_sequence(screen_manager):
 
         if i == 2:
             stop_music()
-            play_music("C:/Users/bel31/PycharmProjects/pythonProject/game/sounds/main_theme.ogg")
+            play_music("../game/sounds/main_theme.ogg")
 
         if i < len(intro_images) - 1:
             fade_out(SCREEN, img)
@@ -95,9 +95,9 @@ def show_intro_sequence(screen_manager):
 
 def show_victory_sequence(screen, images, final_music=False):
     if final_music:
-        play_music("C:/Users/bel31/PycharmProjects/pythonProject/game/sounds/final_theme.ogg")
+        play_music("../game/sounds/final_theme.ogg")
     else:
-        play_music("C:/Users/bel31/PycharmProjects/pythonProject/game/sounds/main_theme.ogg")
+        play_music("../game/sounds/main_theme.ogg")
 
     for img in images:
         img = pygame.transform.scale(img, screen.get_size())
@@ -117,43 +117,43 @@ def main():
     inventory = Inventory()
 
     maze_victory_imgs = [
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/victorymaze.png"),
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/map1.png"),
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/aboutsheep.png"),
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/intro6.png")
+        pygame.image.load("../game/icons/victorymaze.png"),
+        pygame.image.load("../game/icons/map1.png"),
+        pygame.image.load("../game/icons/aboutsheep.png"),
+        pygame.image.load("../game/icons/intro6.png")
     ]
 
     match3_victory_imgs = [
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/victorymatch3.png"),
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/map2.png"),
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/intro7.png")
+        pygame.image.load("../game/icons/victorymatch3.png"),
+        pygame.image.load("../game/icons/map2.png"),
+        pygame.image.load("../game/icons/intro7.png")
     ]
 
     hangman_victory_imgs = [
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/victoryhangman.png"),
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/map3.png"),
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/intro8.png")
+        pygame.image.load("../game/icons/victoryhangman.png"),
+        pygame.image.load("../game/icons/map3.png"),
+        pygame.image.load("../game/icons/intro8.png")
     ]
 
     tictactoe_victory_imgs = [
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/victorytictactoe.png"),
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/map4.png"),
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/intro9.png")
+        pygame.image.load("../game/icons/victorytictactoe.png"),
+        pygame.image.load("../game/icons/map4.png"),
+        pygame.image.load("../game/icons/intro9.png")
     ]
 
     memo_victory_imgs = [
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/victorymemo.png"),
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/map5.png"),
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/victorygame.png"),
-        pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/the_end.png")
+        pygame.image.load("../game/icons/victorymemo.png"),
+        pygame.image.load("../game/icons/map5.png"),
+        pygame.image.load("../game/icons/victorygame.png"),
+        pygame.image.load("../game/icons/the_end.png")
     ]
 
     stages = [
-        (maze_game, maze_victory_imgs, "C:/Users/bel31/PycharmProjects/pythonProject/game/sounds/maze_theme.ogg", False),
-        (match3_game, match3_victory_imgs, "C:/Users/bel31/PycharmProjects/pythonProject/game/sounds/match3_theme.ogg", False),
-        (hangman_game, hangman_victory_imgs, "C:/Users/bel31/PycharmProjects/pythonProject/game/sounds/hangman_theme.ogg", False),
-        (tictactoe_game, tictactoe_victory_imgs, "C:/Users/bel31/PycharmProjects/pythonProject/game/sounds/tictactoe_theme.ogg", False),
-        (memo_game, memo_victory_imgs, "C:/Users/bel31/PycharmProjects/pythonProject/game/sounds/memo_theme.ogg", True)
+        (maze_game, maze_victory_imgs, "../game/sounds/maze_theme.ogg", False),
+        (match3_game, match3_victory_imgs, "../game/sounds/match3_theme.ogg", False),
+        (hangman_game, hangman_victory_imgs, "../game/sounds/hangman_theme.ogg", False),
+        (tictactoe_game, tictactoe_victory_imgs, "../game/sounds/tictactoe_theme.ogg", False),
+        (memo_game, memo_victory_imgs, "../game/sounds/memo_theme.ogg", True)
     ]
 
     for game_func, victory_imgs, music_path, is_final in stages:

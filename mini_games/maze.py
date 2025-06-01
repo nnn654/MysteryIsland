@@ -10,11 +10,11 @@ FIELD_WIDTH = MAZE_WIDTH * TILE_SIZE
 FIELD_HEIGHT = MAZE_HEIGHT * TILE_SIZE
 FPS = 60
 
-background_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/screen_maze.png")
-player_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/man_maze.png")
+background_img = pygame.image.load("../game/icons/screen_maze.png")
+player_img = pygame.image.load("../game/icons/man_maze.png")
 player_img = pygame.transform.scale(player_img, (TILE_SIZE, TILE_SIZE))
-goal_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/goal.png")
-defeat_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/defeatmaze.png")  # Новый экран поражения
+goal_img = pygame.image.load("../game/icons/goal.png")
+defeat_img = pygame.image.load("../game/icons/defeatmaze.png")  # Новый экран поражения
 
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)

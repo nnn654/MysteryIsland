@@ -12,14 +12,14 @@ def memo_game(screen, inventory, is_fullscreen, victory_imgs):
     ROWS, COLS = 3, 4
     FPS = 30
     TIME_LIMIT = 45  # секунд
-    defeat_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/defeatmemo.png")
+    defeat_image = pygame.image.load("../game/icons/defeatmemo.png")
 
     image_filenames = [
         "plita_1.PNG", "plita_2.PNG", "plita_3.PNG", "plita_4.PNG",
         "plita_5.PNG", "plita_6.PNG"
     ]
 
-    base_path = "C:/Users/bel31/PycharmProjects/pythonProject/game/icons"
+    base_path = "../game/icons"
 
     font = pygame.font.SysFont(None, 36)
     clock = pygame.time.Clock()

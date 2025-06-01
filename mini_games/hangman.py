@@ -24,7 +24,7 @@ def hangman_round(screen, category, words, inventory, screen_manager):
     wrong = 0
     max_wrong = 6
 
-    background = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/screen_hangman.PNG").convert()
+    background = pygame.image.load("../game/icons/screen_hangman.PNG").convert()
     background = pygame.transform.scale(background, screen.get_size())
 
     while wrong < max_wrong and not all(c in guessed for c in word):
@@ -79,7 +79,7 @@ def hangman_round(screen, category, words, inventory, screen_manager):
 
 
 def hangman_game(screen, inventory, screen_manager, victory_imgs):
-    background_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/screen_reshang.png").convert()
+    background_img = pygame.image.load("../game/icons/screen_reshang.png").convert()
 
     guessed_categories = []
 

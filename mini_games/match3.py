@@ -20,9 +20,9 @@ COLORS = [
 ]
 BLUE_INDEX = 2
 
-BACKGROUND_IMAGE = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/screen_match3.PNG")
-WATER_IMAGE = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/water_drop.png")
-DEFEAT_IMAGE = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/defeatmatch3.png")
+BACKGROUND_IMAGE = pygame.image.load("../game/icons/screen_match3.PNG")
+WATER_IMAGE = pygame.image.load("../game/icons/water_drop.png")
+DEFEAT_IMAGE = pygame.image.load("../game/icons/defeatmatch3.png")
 
 def match3_game(screen, inventory, screen_manager, victory_imgs):
     clock = pygame.time.Clock()
