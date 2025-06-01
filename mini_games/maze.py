@@ -1,4 +1,4 @@
-# game/mini_games/maze.py
+# MysteryIsland/mini_games/maze.py
 # maze.py
 import pygame
 import time
@@ -10,11 +10,11 @@ FIELD_WIDTH = MAZE_WIDTH * TILE_SIZE
 FIELD_HEIGHT = MAZE_HEIGHT * TILE_SIZE
 FPS = 60
 
-background_img = pygame.image.load("../game/icons/screen_maze.png")
-player_img = pygame.image.load("../game/icons/man_maze.png")
+background_img = pygame.image.load("../MysteryIsland/icons/screen_maze.png")
+player_img = pygame.image.load("../MysteryIsland/icons/man_maze.png")
 player_img = pygame.transform.scale(player_img, (TILE_SIZE, TILE_SIZE))
-goal_img = pygame.image.load("../game/icons/goal.png")
-defeat_img = pygame.image.load("../game/icons/defeatmaze.png")  # Новый экран поражения
+goal_img = pygame.image.load("../MysteryIsland/icons/goal.png")
+defeat_img = pygame.image.load("../MysteryIsland/icons/defeatmaze.png")  # Новый экран поражения
 
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)
@@ -189,10 +189,10 @@ FIELD_WIDTH = MAZE_WIDTH * TILE_SIZE
 FIELD_HEIGHT = MAZE_HEIGHT * TILE_SIZE
 FPS = 60
 
-background_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/screen_maze.PNG")
-player_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/man_maze.png")
+background_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/screen_maze.PNG")
+player_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/man_maze.png")
 player_img = pygame.transform.scale(player_img, (TILE_SIZE, TILE_SIZE))
-goal_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/goal.png")
+goal_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/goal.png")
 
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)
@@ -364,11 +364,11 @@ FIELD_WIDTH = MAZE_WIDTH * TILE_SIZE
 FIELD_HEIGHT = MAZE_HEIGHT * TILE_SIZE
 FPS = 60
 
-background_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/screen_maze.PNG")  # фон
-player_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/man_maze.png")          # игрок
+background_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/screen_maze.PNG")  # фон
+player_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/man_maze.png")          # игрок
 player_img = pygame.transform.scale(player_img, (TILE_SIZE, TILE_SIZE))
-victory_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/victory.PNG")  # путь к изображению победы
-goal_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/goal.png")
+victory_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/victory.PNG")  # путь к изображению победы
+goal_img = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/goal.png")
 
 
 WHITE = (255, 255, 255)
@@ -792,7 +792,7 @@ def show_message(screen, title, message, color=WHITE):
 import pygame
 import random
 import time
-from game.common.ui import show_message, show_end_screen, draw_map
+from MysteryIsland.common.ui import show_message, show_end_screen, draw_map
 
 WIDTH, HEIGHT = 800, 600
 TILE_SIZE = 40

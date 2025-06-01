@@ -1,4 +1,4 @@
-# game/common/ui.py
+# MysteryIsland/common/ui.py
 
 import pygame
 import sys

@@ -1,4 +1,4 @@
-# game/mini_games/match3_game.py
+# MysteryIsland/mini_games/match3_game.py
 # match3.py
 import pygame
 import random
@@ -20,9 +20,9 @@ COLORS = [
 ]
 BLUE_INDEX = 2
 
-BACKGROUND_IMAGE = pygame.image.load("../game/icons/screen_match3.PNG")
-WATER_IMAGE = pygame.image.load("../game/icons/water_drop.png")
-DEFEAT_IMAGE = pygame.image.load("../game/icons/defeatmatch3.png")
+BACKGROUND_IMAGE = pygame.image.load("../MysteryIsland/icons/screen_match3.PNG")
+WATER_IMAGE = pygame.image.load("../MysteryIsland/icons/water_drop.png")
+DEFEAT_IMAGE = pygame.image.load("../MysteryIsland/icons/defeatmatch3.png")
 
 def match3_game(screen, inventory, screen_manager, victory_imgs):
     clock = pygame.time.Clock()
@@ -245,8 +245,8 @@ COLORS = [
 ]
 BLUE_INDEX = 2
 
-BACKGROUND_IMAGE = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/screen_match3.PNG")
-WATER_IMAGE = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/water_drop.png")
+BACKGROUND_IMAGE = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/screen_match3.PNG")
+WATER_IMAGE = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/water_drop.png")
 
 def match3_game(screen, inventory, screen_manager, victory_imgs):
     clock = pygame.time.Clock()
@@ -473,10 +473,10 @@ COLORS = [
 ]
 BLUE_INDEX = 2
 
-BACKGROUND_IMAGE = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/screen_match3.jpg")
+BACKGROUND_IMAGE = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/screen_match3.jpg")
 BACKGROUND_IMAGE = pygame.transform.scale(BACKGROUND_IMAGE, (800, 600))
 
-WATER_IMAGE = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/water_drop.png")
+WATER_IMAGE = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/water_drop.png")
 WATER_IMAGE = pygame.transform.scale(WATER_IMAGE, (TILE_SIZE - 8, TILE_SIZE - 8))
 
 def match3_game(screen, inventory):

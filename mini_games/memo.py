@@ -1,4 +1,4 @@
-# game/mini_games/memo.py
+# MysteryIsland/mini_games/memo.py
 # memo.py
 
 
@@ -12,14 +12,14 @@ def memo_game(screen, inventory, is_fullscreen, victory_imgs):
     ROWS, COLS = 3, 4
     FPS = 30
     TIME_LIMIT = 45  # секунд
-    defeat_image = pygame.image.load("../game/icons/defeatmemo.png")
+    defeat_image = pygame.image.load("../MysteryIsland/icons/defeatmemo.png")
 
     image_filenames = [
         "plita_1.PNG", "plita_2.PNG", "plita_3.PNG", "plita_4.PNG",
         "plita_5.PNG", "plita_6.PNG"
     ]
 
-    base_path = "../game/icons"
+    base_path = "../MysteryIsland/icons"
 
     font = pygame.font.SysFont(None, 36)
     clock = pygame.time.Clock()
@@ -229,7 +229,7 @@ def memo_game(screen, inventory):
     font = pygame.font.SysFont(None, 36)
     clock = pygame.time.Clock()
 
-    card_back_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/card_back.PNG").convert()
+    card_back_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/card_back.PNG").convert()
     card_back_image = pygame.transform.scale(card_back_image, (CARD_SIZE, CARD_SIZE))
 
     image_filenames = [
@@ -239,7 +239,7 @@ def memo_game(screen, inventory):
 
     card_faces = []
     for filename in image_filenames:
-        img = pygame.image.load(os.path.join("C:/Users/bel31/PycharmProjects/pythonProject/game/icons", filename)).convert_alpha()
+        img = pygame.image.load(os.path.join("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons", filename)).convert_alpha()
         img = pygame.transform.scale(img, (CARD_SIZE, CARD_SIZE))
         card_faces.append(img)
 

@@ -1,4 +1,4 @@
-# game/common/inventory.py
+# MysteryIsland/common/inventory.py
 
 class Inventory:
     def __init__(self):

@@ -1,4 +1,4 @@
-# game/common/screen_manager.py
+# MysteryIsland/common/screen_manager.py
 import pygame
 
 

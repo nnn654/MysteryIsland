@@ -1,10 +1,10 @@
-# game/mini_games/tictactoe.py
+# MysteryIsland/mini_games/tictactoe.py
 # tictactoe.py
 
 import pygame
 import random
 import math
-from game1.mini_games.common.ui import show_message
+
 
 BOARD_ROWS = 3
 BOARD_COLS = 3
@@ -16,11 +16,11 @@ def tictactoe_game(screen, inventory, screen_manager, victory_imgs):
     offset_x = 0
     offset_y = 0
 
-    x_image = pygame.image.load("../game/icons/x_img.png").convert_alpha()
-    o_image = pygame.image.load("../game/icons/o_img.png").convert_alpha()
-    background_image = pygame.image.load("../game/icons/screen_tictactoe.png").convert()
-    defeat_image = pygame.image.load("../game/icons/defeattictactoe.png").convert()
-    victory_bg_image = pygame.image.load("../game/icons/screen_restictac.png").convert()
+    x_image = pygame.image.load("../MysteryIsland/icons/x_img.png").convert_alpha()
+    o_image = pygame.image.load("../MysteryIsland/icons/o_img.png").convert_alpha()
+    background_image = pygame.image.load("../MysteryIsland/icons/screen_tictactoe.png").convert()
+    defeat_image = pygame.image.load("../MysteryIsland/icons/defeattictactoe.png").convert()
+    victory_bg_image = pygame.image.load("../MysteryIsland/icons/screen_restictac.png").convert()
 
     def update_sizes():
         nonlocal WIDTH, HEIGHT, SQUARE_SIZE, offset_x, offset_y
@@ -293,10 +293,10 @@ def tictactoe_game(screen, inventory, screen_manager, victory_imgs):
     offset_y = 0
 
     # Загрузка изображений крестика, нолика и фона
-    x_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/x_img.png").convert_alpha()
-    o_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/o_img.png").convert_alpha()
+    x_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/x_img.png").convert_alpha()
+    o_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/o_img.png").convert_alpha()
     background_image = pygame.image.load(
-        "C:/Users/bel31/PycharmProjects/pythonProject/game/icons/screen_tictactoe.png"
+        "C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/screen_tictactoe.png"
     ).convert()
 
     def update_sizes():
@@ -559,11 +559,11 @@ def tictactoe_game(screen, inventory, screen_manager, victory_imgs):
     offset_y = 0
 
     # Загрузка изображений крестика и нолика
-    x_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/x_img.png").convert_alpha()
-    o_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/o_img.png").convert_alpha()
+    x_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/x_img.png").convert_alpha()
+    o_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/o_img.png").convert_alpha()
 
     # Загрузка фонового изображения
-    background_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/game/icons/screen_tictactoe.png").convert()
+    background_image = pygame.image.load("C:/Users/bel31/PycharmProjects/pythonProject/MysteryIsland/icons/screen_tictactoe.png").convert()
 
     def update_sizes():
         nonlocal WIDTH, HEIGHT, SQUARE_SIZE, offset_x, offset_y
