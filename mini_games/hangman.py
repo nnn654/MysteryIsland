@@ -3,7 +3,7 @@
 
 import pygame
 import random
-from game1.mini_games.common.ui import show_message  # Используется для экрана поражения
+#from game1.mini_games.common.ui import show_message  # Используется для экрана поражения
 
 # Словарь категорий и слов
 WORD_BANKS = {
