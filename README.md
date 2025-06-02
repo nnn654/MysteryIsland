@@ -65,5 +65,25 @@ git clone https://github.com/nnn654/MysteryIsland.git
     </ul>
 </ul>
 
+## Описание файла maze.py
+
+### Функции:
+<ul>
+  <li> maze_game(screen, inventory, screen_manager, victory_images)</li>
+    <ul>
+    <li>Игровой цикл лабиринта, отслеживает время и победу.</li>
+    </ul>
+  <li> draw_maze(screen, maze, player_pos, goal_pos, tile_size)</li>
+    <ul>
+    <li>Отрисовка карты лабиринта, игрока и цели.</li>
+    </ul>
+  <li> show_defeat_screen(screen, screen_manager)</li>
+    <ul>
+    <li>Показ экрана поражения, если игрок не прошёл лабиринт вовремя.</li>
+    </ul>
+</ul>
+
+
+
 
 
