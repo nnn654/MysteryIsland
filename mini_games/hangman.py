@@ -3,6 +3,10 @@
 
 import pygame
 import random
+<<<<<<< HEAD
+=======
+#from game1.mini_games.common.ui import show_message  # Используется для экрана поражения
+>>>>>>> ab507af929f79733eb859335ade93fbe1ee00546
 
 WORD_BANKS = {
     "компас": ["север", "восток", "запад", "стрелка", "путь"],
@@ -168,4 +172,102 @@ def show_failure_screen(screen, background_img):
                 pygame.quit()
                 exit()
             elif event.type == pygame.KEYDOWN or event.type == pygame.MOUSEBUTTONDOWN:
+<<<<<<< HEAD
                 waiting = False
+=======
+                waiting = False
+
+
+'''def show_victory_sequence(screen, imgs):
+    screen_width, screen_height = screen.get_size()
+    fade_surface = pygame.Surface((screen_width, screen_height))
+    fade_surface.fill((0, 0, 0))
+
+    for img in imgs:
+        scaled_img = pygame.transform.scale(img, (screen_width, screen_height))
+        # fade-in
+        for alpha in range(0, 256, 15):
+            screen.blit(scaled_img, (0, 0))
+            fade_surface.set_alpha(255 - alpha)
+            screen.blit(fade_surface, (0, 0))
+            pygame.display.flip()
+            pygame.time.delay(30)
+
+        # ждём нажатия клавиши или мыши для перехода к следующему изображению
+        waiting = True
+        while waiting:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    exit()
+                elif event.type == pygame.KEYDOWN or event.type == pygame.MOUSEBUTTONDOWN:
+                    waiting = False
+
+        # fade-out
+        for alpha in range(0, 256, 15):
+            screen.blit(scaled_img, (0, 0))
+            fade_surface.set_alpha(alpha)
+            screen.blit(fade_surface, (0, 0))
+            pygame.display.flip()
+            pygame.time.delay(30)
+'''
+
+
+'''import pygame, random
+from game1.mini_games.common.ui import show_message
+
+WORD_BANKS = {
+    "компас": ["север", "восток", "запад", "стрелка", "путь"],
+    "ведро": ["вода", "колодец", "ковш", "тара", "озеро"],
+    "факел": ["огонь", "искра", "свет", "пламя", "свеча"]
+}
+
+
+def hangman_round(screen, category, words, inventory):
+    word = random.choice(words).upper()
+    guessed = set()
+    wrong = 0
+    max_wrong = 6
+    font = pygame.font.SysFont("arial", 36)
+
+    while wrong < max_wrong and not all(c in guessed for c in word):
+        screen.fill((255, 255, 255))
+        display = " ".join([c if c in guessed else "_" for c in word])
+        render = font.render(f"{category.upper()}: {display}", True, (0, 0, 0))
+        screen.blit(render, (100, 200))
+        msg = font.render(f"Ошибки: {wrong}/{max_wrong}", True, (200, 0, 0))
+        screen.blit(msg, (100, 260))
+        pygame.display.flip()
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit(); exit()
+            if event.type == pygame.KEYDOWN:
+                ch = event.unicode.upper()
+                if ch.isalpha() and len(ch) == 1:
+                    if ch in word:
+                        guessed.add(ch)
+                    else:
+                        wrong += 1
+
+    if all(c in guessed for c in word):
+        inventory.add(category)
+        show_message(screen, f"Угадано слово: {word}", f"Получен предмет: {category}")
+        return True
+    else:
+        show_message(screen, f"Не угадано слово: {word}", "Раунд проигран")
+        return False
+
+
+def hangman_game(screen, inventory):
+    wins = 0
+    for category, words in WORD_BANKS.items():
+        result = hangman_round(screen, category, words, inventory)
+        if result:
+            wins += 1
+
+    if wins == 0:
+        show_message(screen, "Вы не прошли ни одного раунда", "GAME OVER", color=(200, 0, 0))
+        return False
+    return True'''
+>>>>>>> ab507af929f79733eb859335ade93fbe1ee00546
