@@ -75,10 +75,10 @@ def match3_game(screen, inventory, screen_manager):
         text = font.render(info_text, True, (255, 255, 255))
         screen.blit(text, (offset_x, offset_y - 40))
 
-    def swap(x1, y1, x2, y2):
+    def swap(x1, y1, x2, y2): #Меняет местами две плитки.
         board[y1][x1], board[y2][x2] = board[y2][x2], board[y1][x1]
 
-    def find_matches():
+    def find_matches(): #Поиск совпадений.
         matched = [[False] * WIDTH for _ in range(HEIGHT)]
         for y in range(HEIGHT):
             for x in range(WIDTH - 2):
@@ -102,7 +102,7 @@ def match3_game(screen, inventory, screen_manager):
                     removed = True
         return removed
 
-    def drop_tiles():
+    def drop_tiles(): #Заменяет удалённые плитки
         for x in range(WIDTH):
             for y in range(HEIGHT - 1, -1, -1):
                 if board[y][x] == -1:
@@ -122,7 +122,7 @@ def match3_game(screen, inventory, screen_manager):
         offset_x = (screen_width - WIDTH * TILE_SIZE) // 2
         offset_y = (screen_height - HEIGHT * TILE_SIZE) // 2
 
-        if not game_over:
+        if not game_over: #Обработка логики матчей
             draw_board(offset_x, offset_y)
             draw_ui(offset_x, offset_y)
             pygame.display.flip()
@@ -169,7 +169,7 @@ def match3_game(screen, inventory, screen_manager):
                         pygame.quit()
                         return False
 
-            elif event.type == pygame.MOUSEBUTTONDOWN and not game_over:
+            elif event.type == pygame.MOUSEBUTTONDOWN and not game_over: #Если клик по полю, вычисляем координаты плитки.
                 mx, my = pygame.mouse.get_pos()
                 if not (offset_x <= mx < offset_x + TILE_SIZE * WIDTH and offset_y <= my < offset_y + TILE_SIZE * HEIGHT):
                     continue

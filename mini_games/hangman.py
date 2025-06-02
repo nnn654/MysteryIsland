@@ -61,7 +61,7 @@ def hangman_round(screen, category, words, inventory, screen_manager):
                         pygame.quit()
                         return False
 
-                ch = event.unicode.upper()
+                ch = event.unicode.upper() #Ввод буквы игроком
                 if ch.isalpha() and len(ch) == 1:
                     if ch in word:
                         guessed.add(ch)
