@@ -290,5 +290,7 @@ git clone https://github.com/nnn654/MysteryIsland.git
 
 ## Контакты
 
-Разработчики: Анна Берлизова, Екатерина Немыкина
-Email: anya.brl@yandex.ru, katya.nmk@yandex.ru
+<ul>
+  <li>Разработчики: Анна Берлизова, Екатерина Немыкина</li>
+  <li>Email: anya.brl@yandex.ru, katya.nmk@yandex.ru</li>
+</ul>
