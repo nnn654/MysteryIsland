@@ -29,7 +29,7 @@ git clone https://github.com/nnn654/MysteryIsland.git
 
 ## Описание файла main.py
 
-###Функции:
+### Функции:
 <ul>
   <li> play_music(path, fadeout_ms=2000, fadein_ms=2000)</li>
     <ul>
