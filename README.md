@@ -28,24 +28,41 @@ git clone https://github.com/nnn654/MysteryIsland.git
 3. Соберите и запустите проект.
 
 ## Описание файла main.py
-###Функции:
-  play_music(path, fadeout_ms=2000, fadein_ms=2000)	
-    Воспроизводит музыкальный файл с fade in/fade out.
-  stop_music(fadeout_ms=2000)
-    Останавливает текущую музыку с fade out.
-  fade_in(screen, image)
-    Плавное появление изображения с наложением затемнения.
-  fade_out(screen, image)
-    Плавное исчезновение изображения с наложением затемнения.
-  show_intro_sequence(screen_manager)	
-    Показывает вступительные сцены в начале игры.
-  show_victory_sequence(screen, images, final_music=False)	
-    Анимация победы после прохождения мини-игры.
-  main()	
-    Главная логика запуска и переходов между мини-играми.
-  game_loop()	
-    Главный цикл, обрабатывающий события и запускающий main().
 
+###Функции:
+<ul>
+  <li> play_music(path, fadeout_ms=2000, fadein_ms=2000)</li>
+    <ul>
+    <li>Воспроизводит музыкальный файл с fade in/fade out.</li>
+    </ul>
+  <li> stop_music(fadeout_ms=2000)</li>
+    Останавливает текущую музыку с fade out.
+    </ul>
+  <li> fade_in(screen, image)</li>
+    <ul>
+    Плавное появление изображения с наложением затемнения.
+    </ul>
+  <li> fade_out(screen, image)</li>
+    <ul>
+    Плавное исчезновение изображения с наложением затемнения.
+    </ul>
+  <li> show_intro_sequence(screen_manager)</li>
+    <ul>
+    Показывает вступительные сцены в начале игры.
+    </ul>
+  <li> show_victory_sequence(screen, images, final_music=False)</li>
+    <ul>
+    Анимация победы после прохождения мини-игры.
+    </ul>
+  <li> main()</li>
+    <ul>
+    Главная логика запуска и переходов между мини-играми.
+    </ul>
+  <li> game_loop()</li>
+    <ul>
+    Главный цикл, обрабатывающий события и запускающий main().
+    </ul>
+</ul>
 
 
 
