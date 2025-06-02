@@ -62,7 +62,7 @@ git clone https://github.com/nnn654/MysteryIsland.git
     </ul>
   <li> game_loop()</li>
     <ul>
-    Главный цикл, обрабатывающий события и запускающий main().
+    <li>Главный цикл, обрабатывающий события и запускающий main().</li>
     </ul>
 </ul>
 
